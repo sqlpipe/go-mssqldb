@@ -3,8 +3,8 @@ package azuread
 import (
 	"testing"
 
-	mssql "github.com/denisenkom/go-mssqldb"
-	"github.com/denisenkom/go-mssqldb/msdsn"
+	mssql "github.com/sqlpipe/go-mssqldb"
+	"github.com/sqlpipe/go-mssqldb/msdsn"
 )
 
 func TestValidateParameters(t *testing.T) {
@@ -96,7 +96,7 @@ func TestValidateParameters(t *testing.T) {
 				password:        accessToken,
 				adalWorkflow:    mssql.FedAuthADALWorkflowNone,
 				fedAuthWorkflow: ActiveDirectoryServicePrincipalAccessToken,
-				fedAuthLibrary: mssql.FedAuthLibrarySecurityToken,
+				fedAuthLibrary:  mssql.FedAuthLibrarySecurityToken,
 			},
 		},
 	}

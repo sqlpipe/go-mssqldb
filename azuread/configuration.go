@@ -10,8 +10,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 
-	mssql "github.com/denisenkom/go-mssqldb"
-	"github.com/denisenkom/go-mssqldb/msdsn"
+	mssql "github.com/sqlpipe/go-mssqldb"
+	"github.com/sqlpipe/go-mssqldb/msdsn"
 )
 
 const (
